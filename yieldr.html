@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work: vaporwave HTML site</title>
-  
+  <title>Work: Yieldr</title>
+
 <!-- foundation css -->
 <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@
 <div class="row">
     <div class="large-12 columns">
         <h1>Yero Schutte <img id="logo" <a href="#" src="images/logo.gif"></a></h1>
-        <div class="nav-bar right">
+          <div class="nav-bar right">
             <nav class="hover-underline-menu" data-menu-underline-from-center>
                 <ul class="menu align-center">
                     <li><a href="index.html" class="button" id="homebtn">Home</a></li>
@@ -41,19 +41,27 @@
 
 <!-- GIF Display -->
 <div class="row">
-    <h4>My very first website! very basic and vapourwave-themed</h4>
-    <h6>Uses: <em>HTML5, CSS3</em></h6>
+    <h4>Playlist generator and beat-making music web app</h4>
+    <h6>Using Spotify's and Microsoft's Emotion API, a playlist can be generated based on the facial emotion portayed in an image.
+  <p>*due to Spotify's recent API changes, the playlists can not be generated. Matching Youtube videos are used instead.</p></h6>
+    <p>Uses: <em>Rapid API, Emotion API, Spotify API, Web audio API, javascript, materialize, pug, CSS3</em></p>
     <br>
     <div class="display">
-        <a href="spotify.html" class="gifnav">&#8249;|</a>
-        <div class="gifarea"><img src="images/vapor.gif" /></div>
-        <a href="pirate.html" class="gifnav">|&#8250;</a>
+        <div class="gifarea"><img src="images/spot.gif" /></div>
+        <a href="vaporwave.html" class="gifnav" target="next">|&#8250;</a> right arrow
+    </div>
+    <br>
+    <hr>
+    <h6>The second feature lets you make music by playing/selecting loops that I created in Ableton Live.
+<p> The loops can either be clicked on or triggered by your keyboard! Some javascript and the Web audio API were used to achieve this.</p></h6>
+    <div class="display2">
+        <div class="gifarea"><img src="images/spotbeat.gif" /></div>
     </div>
     <div class="moreinfo">
         <br>
         <h5>view the repository on GitHub:</h5>
         <div class="icon-list">
-            <a href="https://github.com/yeropharaoh/Basic-HTML-Site" target="me github"><i class="fi-social-github"></i></a>
+            <a href="https://github.com/yeropharaoh/Music-related-API-mashup-and-music-making-site" target="me github"><i class="fi-social-github"></i></a>
         </div>
     </div>
 </div>
@@ -63,38 +71,38 @@
 
 <!-- CONTACT SECTION  -->               
 <div class="row">
-    <div class="medium-6 columns">
-        <h3>Contact Me</h3>
-        <p>Find me below</p>
-        <ul class="menu">
-            <div class="icon-list">
-                <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
-                <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
-                <a href="http://yeropharaoh.com/" target="_blank"><i class="fi-music"></i></a>
-            </div>
-        </ul>
-    </div>
-    <div class="medium-6 columns">
-        <form action="mailto:yeroffx@gmail.com" method="GET">
-            <label>Name
-                <input type="text" placeholder="Name">
-            </label>
-            <label>Email
-                <input type="text" placeholder="Email">
-            </label>
-            <label>
-                Message
-                <textarea placeholder="Let's meet!"></textarea>
-            </label>
-            <input type="submit" class="button expanded" value="Submit">
-        </form>
-    </div>
+  <div class="medium-6 columns">
+      <h3>Contact Me</h3>
+      <p>Find me below</p>
+      <ul class="menu">
+          <div class="icon-list">
+              <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
+              <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
+              <a href="http://yeropharaoh.com/" target="_blank"><i class="fi-music"></i></a>
+          </div>
+      </ul>
+  </div>
+  <div class="medium-6 columns">
+      <form action="mailto:yeroffx@gmail.com" method="GET">
+          <label>Name
+              <input type="text" placeholder="Name">
+          </label>
+          <label>Email
+              <input type="text" placeholder="Email">
+          </label>
+          <label>
+              Message
+              <textarea placeholder="Let's meet!"></textarea>
+          </label>
+          <input type="submit" class="button expanded" value="Submit">
+      </form>
+  </div>
 </div>
 
 <br>
 <div class="copyright">
   <h6>&copy; Yero Schutte 2017</h6>
-</div>
+</div>  
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
