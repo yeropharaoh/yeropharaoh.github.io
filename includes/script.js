@@ -13,6 +13,29 @@ function scrollAnchor (desiredHeight) {
 
 $(document).ready(() => {
   scrollAnchor(10);
+
+//USE CASE image swap for collect deckz
+  $('.features-block .left img').on("click touchstart",function() {
+    let first_image = $(this).attr("id");
+    $('#image-1').removeClass();           
+    $('#image-2').removeClass();           
+    $('#image-3').removeClass();
+    if (first_image === 'image-1'){
+        $('#image-1').addClass('image-C');
+        $('#image-2').addClass('image-A');
+        $('#image-3').addClass('image-B');
+    }
+    else if (first_image === 'image-2'){   
+        $('#image-1').addClass('image-B');
+        $('#image-2').addClass('image-C');
+        $('#image-3').addClass('image-A');
+    }
+    else {   
+        $('#image-1').addClass('image-A');
+        $('#image-2').addClass('image-B');
+        $('#image-3').addClass('image-C');
+    }
+  });
 });
 
 //TYPED.js
