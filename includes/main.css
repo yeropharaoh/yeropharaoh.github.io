@@ -131,8 +131,8 @@ display: inline-block;
 
 /*WORK PAGE*/
 .display {
-width: 100%;
-display: inline;
+  width: 100%;
+  display: inline;
 }
 
 .display2 {
@@ -161,107 +161,11 @@ font-size: 3em;
   text-align: center;
 }  
 
-/* .gifarea .yieldr-img {
-  width: 50%;
-} */
+.gifarea .yieldr-img {
+  width: 95%;
+  height: 470px;
+}
 
-.features-block .left {
-  position: relative;
-  width: 43%;
-}
-.features-block .left img {
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-}
-.features-block .left .image-A, .features-block .left .image-B, .features-block .left .image-C {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  cursor: pointer;
-}
-.features-block .left .image-container {
-  height: 440px;
-}
-.features-block .left .image-A {
-  transform: translate(0);
-  z-index: 2;
-}
-.features-block .left .image-B {
-  transform: translate(14px, 14px);
-  z-index: 1;
-}
-.features-block .left .image-C {
-  transform: translate(28px, 28px);
-  z-index: 0;
-}
-.features-block .long {
-  min-height: 483px;
-}
-.features-block ul.features-menu {
-  margin: 15px 0;
-  list-style-type: none;
-}
-.features-block ul.features-menu li {
-  display: inline-block;
-  padding-right: 30px;
-}
-.features-block ul.features-menu li a {
-  position: relative;
-  font-size: 18px;
-  color: grey;
-}
-.features-block ul.features-menu li a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background: pink;
-  visibility: hidden;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: 0.25s linear;
-}
-.features-block ul.features-menu li a:hover:before, .features-block ul.features-menu li a:focus:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-.features-block ul.features-menu li a:hover {
-  color: pink;
-}
-.features-block ul.features-menu li a.active-underline {
-  color: pink;
-  transition: 0.3s;
-  padding-bottom: 2px;
-  border-bottom: 2px solid pink;
-}
-.features-block .right {
-  margin-left: 70px;
-}
-.features-block .right h2, .features-block .right p {
-  width: 97%;
-  text-align: left;
-}
-.features-block .right h2 {
-  margin-bottom: 15px;
-}
-.features-block .right .pul_img {
-  margin-top: 24px;
-}
-.features-block #Analyze, .features-block #Activate, .features-block #Collaborate {
-  display: none;
-  transition: 0.3s;
-}
-.features-block #Collaborate {
-  width: 100%;
-}
-/* 
-/*  */
- /* */ 
 /*  */
 
 /*CV page*/
