@@ -9,9 +9,10 @@
 <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- css & font -->
 <link rel="stylesheet" type="text/css" href="includes/main.css">
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <!-- includes -->
 <script src="includes/script.js"></script>
@@ -24,18 +25,21 @@
 <body>
 
 <div class="row">
-    <div class="large-12 columns">
-        <h1>Yero Schutte <img id="logo" <a href="#" src="images/logo.gif"></a></h1>
-          <div class="nav-bar right">
+    <div class="nav-whole large-12 columns">
+        <div class="yer small-1 large-5">
+        <a href="index.html"> <img class="large-4 switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
+        <p class="title">Yero Schutte</p></a>
+        </div>
+        <div class="nav-bar right large-3">
             <nav class="hover-underline-menu" data-menu-underline-from-center>
                 <ul class="menu align-center">
                     <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                    <li><a href="index.html#work" class="button" id="musicbtn">Work</a></li>
-                    <li><a href="cv.html" class="button" id="aboutbtn" style="color: white;">CV</a></li>
-                </ul>
-            </nav>
-        </div>
-        <hr/>
+                    <li><a href="index.html#work" class="button" id="workbtn" >Work</a></li>
+                    <li><a href="cv.html" class="button" id="cvtbn" style="color: white;">CV</a></li>
+              </ul>
+          </nav>
+      </div>
+      <hr id="proj-area" class="hr1"/>
     </div>
 </div>
 
@@ -80,24 +84,31 @@
         <code class="javascript">
   SKILLS
 
-  .front-end {
+  .front-end {                    
       html 5
       css 3
-      jquery
+      jQuery
+      angular
+      vuejs
       handlebars
       pug
       zurb foundation
   }
 
-  .back-end {
-      javascript
+  .back-end { 
+      javaScript
       node-js
       express
       sequelize
       postgreSQL
-      metalsmith
+      gulp
       docker
       kubernetes
+  }
+
+  .bonus {
+    design skills: sketch, adobe cc
+    scrum/agile 
   }
       </code>
     </pre>
@@ -106,32 +117,32 @@
       </div>
     </div>
 </div>
-<hr>
+<hr class="hr-cv">
+<br>
 
 <!-- CONTACT SECTION  -->               
 <div class="row">
     <div class="medium-6 columns">
-      <h3>Contact Me</h3>
-      <p>Find me below</p>
-      <ul class="menu">
+        <p class="title">Contact Me</p>
+        <ul class="menu">
         <div class="icon-list">
             <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
             <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
-            <a href="http://yeropharaoh.com/" target="_blank"><i class="fi-music"></i></a>
+            <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
         </div>
-      </ul>
+        </ul>
     </div>
     <div class="medium-6 columns">
-    <form action="mailto:yeroffx@gmail.com" method="GET">
+    <form action="mailto:yeroschutte@gmail.com" method="GET">
         <label>Name
-          <input type="text" placeholder="Name">
+            <input type="text" placeholder="Your Name">
         </label>
         <label>Email
-          <input type="text" placeholder="Email">
+            <input type="text" placeholder="Your E-mail">
         </label>
         <label>
-          Message
-          <textarea placeholder="Let's meet!"></textarea>
+            Message
+            <textarea placeholder="Let's meet!"></textarea>
         </label>
         <input type="submit" class="button expanded" value="Submit">
     </form>
@@ -139,15 +150,11 @@
 </div>
 
 <div class="copyright">
-  <h6>site is under re-construction! &#xa9; Yero Schutte 2017</h6>
-</div> 
+    <h6>&copy; Yero Schutte 2019</h6>
+</div>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/foundation.min.js"></script>
 <script>
-      $(document).foundation();
-      $("[data-menu-underline-from-center] a").addClass("underline-from-center");
+        $("[data-menu-underline-from-center] a").addClass("underline-from-center");
 </script>
 
 </body>
