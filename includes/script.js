@@ -29,16 +29,14 @@ $(document).ready(() => {
 
   // VIDEO HOVER
   $(".gifarea").hover( hoverVideo, hideVideo );
-
+  
+  function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+  }
+  function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+  }
 });
-
-// PLAY/PAUSE VIDEO ON HOVER
-function hoverVideo(e) {  
-  $('video', this).get(0).play(); 
-}
-function hideVideo(e) {
-  $('video', this).get(0).pause(); 
-}
 
 //TYPED.js
 document.addEventListener('DOMContentLoaded', function() {
