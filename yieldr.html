@@ -19,54 +19,69 @@
 </head>
 <body>
 
-<div class="row">
-    <div class="nav-whole large-12 columns">
-        <div class="yer small-1 large-5">
-        <a href="index.html"> <img class="large-4 switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
+<!-- NAV -->
+<div class="nav-whole row">
+    <div class="column small-5">
+        <div class="yer">
+        <a href="index.html"> <img class="switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
         <p class="title">Yero Schutte</p></a>
         </div>
-        <div class="nav-bar right large-3">
-            <nav class="hover-underline-menu" data-menu-underline-from-center>
-                <ul class="menu align-center">
-                    <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                    <li><a href="index.html#work" class="button" id="workbtn" style="color: white;">Work</a></li>
-                    <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
-              </ul>
-          </nav>
-      </div>
-      <hr id="proj-area" class="hr1"/>
     </div>
+    <div class="nav-bar right column small-6">
+        <nav class="hover-underline-menu" data-menu-underline-from-center>
+            <ul class="menu align-center">
+                <li><a href="index.html" class="button" id="homebtn">Home</a></li>
+                <li><a href="#work" class="button" id="workbtn" style="color: white;">Work</a></li>
+                <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
+                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr id ="proj-area" class="hr1"/>
 </div>
 
 <!-- GIF Display -->
-<div class="yieldr-page row small-up-2 medium-up-3 large-up-4">
-    <h4>Yieldr (SaaS start-up focusing on the airline industry) group site</h4>
-    <p class="text">Together with another colleague, our first task at Yieldr was to re-build and optimize the structure + development of the group website.
-        In addition all pages had to be made from scratch after a rebranding which also involved designing a few pages. 
-    </p>
-    <h6>Stack: <em>metalsmith.io, handlebars, markdown, gulp, sass, zurb foundation, html, jqeury, nodejs, docker, kubernetes, AWS</em></h6>
-    <div class="display">
-            <div class="gifarea">
-                <video width="95%" src="images/vid-yieldr-group.mp4" loop type="video/mp4"  Your browser doesn't support HTML5 video tag.></video>
+<div class="yieldr-page">
+    <div class="row">
+        <div class="column small-12">
+            <h4>Yieldr (SaaS start-up focusing on the airline industry) group site</h4>
+            <p class="text">Together with another colleague, our first task at Yieldr was to re-build and optimize the structure + development of the group website.
+                    In addition all pages had to be made from scratch after a rebranding which also involved designing a few pages. 
+            </p>
+            <h6>Stack: <em>metalsmith.io, handlebars, markdown, gulp, sass, zurb foundation, html, jqeury, nodejs, docker, kubernetes, AWS</em></h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="display">
+            <div class="column small-11">
+                <div class="gifarea">
+                    <video src="images/vid-yieldr-group.mp4" loop type="video/mp4"
+                    Your browser doesn't support HTML5 video tag.>
+                    </video>
+                </div>
+            </div>        
+            <div class="proj-nav column small-1">
+                <a href="yieldr-blog.html#proj-area" class="gifnav" id="right">|&#8250;</a>
             </div>
-        <a href="yieldr-blog.html#proj-area" class="gifnav">|&#8250;</a>
+        </div>
+    </div>
     <p class="hover-text">Hover over the video to play/pause it.</p>
     <a href="https://www.yieldr.com/" target="yieldr group site">
         <p class="visit-text" style="text-align: center">VISIT SITE</p>    
     </a>
-    </div>
 </div>
+
 <hr class="yieldr-hr">
 <br>
 
 <!-- CONTACT SECTION  -->               
-<div class="row">
+<div class="contact-section row">
     <div class="medium-6 columns">
         <p class="contact">Contact Me</p>
         <ul class="menu">
         <div class="icon-list">
-            <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
             <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
+            <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
             <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
         </div>
         </ul>

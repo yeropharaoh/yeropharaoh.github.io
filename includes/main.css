@@ -207,7 +207,7 @@ figure, figure img {
 
 /* submit button  */
 .button.expanded{ 
-  margin-top: 1em;
+  margin-top: 2em;
   background-color: #333333;
   border-radius: 5px;
   text-transform: uppercase;
@@ -235,29 +235,25 @@ figure, figure img {
   padding-bottom: 60px;
 }
 
-.yieldr-page .display {
+/* .yieldr-page .display {
   margin-top: 2em;
-}
+} */
 
-.yieldr-text {
-  margin-top: 1em;
-}
 
-.yieldr-page .gifnav {
+/* .yieldr-page .gifnav {
   position: relative;
   top: -240px;
-}
+} */
 
 .yieldr-hr {
   margin-top: 3em;
 }
 
-p.text {
-  width: 90%;
+p.text, h6.text {
+  width: 95%;
 }
 
 p.hover-text {
-  margin-top: 1em;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -266,26 +262,47 @@ p.visit-text {
   font-weight: bold;
 }
 
-.display2 {
+.spotify-hr {
+  margin: 2em auto;
+}
+
+.display2 .gifarea img {
   /* width: 100%; */
-  margin-left: 33px;
+  /* margin-left: 33px; */
+  /* margin-right: 3%; */
+  /* float: inherit; */
+  /* margin: auto 9%; */
 }
 
-.gifarea{
-  display: inline;
+.display {
+  height: 475px;
+  margin: 2em auto;
 }
 
-.gifarea img{
-  width: 91%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.img-div {
+  text-align: center;
 }
 
-.spotify-page .gifnav {
-  position: sticky;
-  top: 10px;
+.moreinfo {
+  margin-bottom: 2em;
+}
+
+.moreinfo .icon-list i {
+  padding-bottom: 0;
+}
+
+.proj-nav {
+  position: relative;
+  height: inherit;
 }
 
 .gifnav {
+  position: sticky;
+  margin-top: 3em;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   display: inline-block;
   color: white;
   font-size: 3em;
@@ -295,14 +312,32 @@ p.visit-text {
   color: #333333;
 }
 
+.gifnav#right {
+  float: right;
+}
+
+.gifarea{
+  height: 475px;
+}
+
+video {
+  width: 100%;
+  height: inherit;
+}
+
+.gifarea img{
+  height: inherit;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .moreinfo {
   text-align: center;
 }  
 
-.gifarea .yieldr-img {
+/* .gifarea .yieldr-img {
   width: 95%;
   height: 470px;
-}
+} */
 
 /*  */
 
@@ -502,7 +537,6 @@ code.javascript {
 }
 
 .copyright h6{
-  color: white;
   text-align: center;
 }
 
@@ -511,6 +545,18 @@ code.javascript {
 @media (min-width: 1024px) and (max-width: 1111px) {
   .nav-bar.right {
     padding-top: 14px;
+  }
+  .display {
+    margin: 0;
+  }
+  .moreinfo {
+    margin-top: 2em;
+  }
+  .display2 .gifarea img {
+    /* margin: auto 3%; */
+  }
+  .proj-description {
+    margin-bottom: 2em;
   }
 }
 
@@ -533,6 +579,24 @@ code.javascript {
   .proj-span {
     opacity: 1;
     bottom: -10px;
+  }
+  .display, .gifarea {
+    height: 310px;
+  }
+  p.hover-text {
+    display: none;
+  }
+  p.visit-text {
+    color: white;
+  }
+  .gifnav {
+    margin-top: 2em;
+  }
+  .cvbox {
+    display: block;
+  }
+  .cvbox pre {
+    width: 100%;
   }
 }
 
@@ -566,6 +630,34 @@ code.javascript {
   #cv-mob {
     display: block;
   }
+  .display, .gifarea {
+    height: 310px;
+  }
+  p.hover-text {
+    display: none;
+  }
+  p.visit-text {
+    color: white;
+  }
+  .cvbox {
+    display: block;
+  }
+  .cvbox pre {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .display, .gifarea {
+    height: 175px;
+  }
+  .gifnav {
+    position: absolute;
+    margin-top: 0;
+  }
+  .contact-section .menu {
+    margin-bottom: 2em;
+  }
 }
 
 @media (max-width: 424px) {
@@ -575,5 +667,11 @@ code.javascript {
   #typed {
     font-size: 20px;
     white-space: normal;
+  }
+  p.text, h6.text {
+    width: 100%;
+  }
+  .display2 .gifarea img {
+
   }
 }

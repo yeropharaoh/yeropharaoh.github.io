@@ -19,43 +19,55 @@
 </head>
 <body>
 
-<div class="row">
-    <div class="nav-whole large-12 columns">
-        <div class="yer small-1 large-5">
-        <a href="index.html"> <img class="large-4 switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
+<!-- NAV -->
+<div class="nav-whole row">
+    <div class="column small-5">
+        <div class="yer">
+        <a href="index.html"> <img class="switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
         <p class="title">Yero Schutte</p></a>
         </div>
-        <div class="nav-bar right large-3">
-            <nav class="hover-underline-menu" data-menu-underline-from-center>
-                <ul class="menu align-center">
-                    <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                    <li><a href="index.html#work" class="button" id="workbtn" style="color: white;">Work</a></li>
-                    <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
-              </ul>
-          </nav>
-      </div>
-      <hr id="proj-area" class="hr1"/>
     </div>
+    <div class="nav-bar right column small-6">
+        <nav class="hover-underline-menu" data-menu-underline-from-center>
+            <ul class="menu align-center">
+                <li><a href="index.html" class="button" id="homebtn">Home</a></li>
+                <li><a href="#work" class="button" id="workbtn" style="color: white;">Work</a></li>
+                <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
+                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr id="proj-area" class="hr1"/>
 </div>
 
 <!-- GIF Display -->
-<div class="row">
-    <h4>Simple Packing-list Web app</h4>
-    <h6>A 'to-do-list' type exercise where the user can create an account, log in, select the type of vacation they are planning on taking, and can create a packing list which is added to their profile.</h6>
-    <h6>Uses: <em>postgreSQL, bcrypt, jQuery, Bootstrap, pug, CSS3.</em></h6>
-    <br>
-    <div class="display">
-        <a href="rap.html#proj-area" class="gifnav">&#8249;|</a>
-        <div class="gifarea">
-            <img class="switch-img" data-alt-src="images/beach.gif" src="images/beachprev.jpeg"/> 
+<div class="rap-page">
+    <div class="row">
+        <div class="proj-description column small-12">        
+            <h4>Simple Packing-list Web app</h4>
+            <h6 class="text">A 'to-do-list' type exercise where the user can create an account, log in, select the type of vacation 
+                they are planning on taking, and can create a packing list which is added to their profile.</h6>
+            <h6>Uses: <em>nodeJS, bcrypt, postgreSQL, sequelize, materialize, pug, html, css</em></h6>
         </div>
-        <!-- <a href="yieldr.html#proj-area" class="gifnav">|&#8250;</a> -->
     </div>
-    <div class="moreinfo">
-        <br>
-        <h5>view the repository on GitHub:</h5>
-        <div class="icon-list">
-            <a href="https://github.com/yeropharaoh/groupproject/tree/YERO2" target="me github"><i class="fi-social-github"></i></a>
+    <div class="row">
+        <div class="display">
+            <div class="proj-nav column small-1">
+                <a href="rap.html#proj-area" class="gifnav" id="left">&#8249;|</a>
+            </div>
+            <div class="img-div column small-11">
+                <div class="gifarea">
+                    <img class="switch-img" data-alt-src="images/beach.gif" src="images/beachprev.jpeg"/> 
+                </div>
+            </div>        
+        </div>
+    </div>
+    <div class="row">
+        <div class="moreinfo column small-12">
+            <h5>view the repository on GitHub:</h5>
+            <div class="icon-list">
+                <a href="https://github.com/yeropharaoh/groupproject/tree/YERO2" target="me github"><i class="fi-social-github"></i></a>
+            </div>
         </div>
     </div>
 </div>
@@ -63,13 +75,13 @@
 <br>
 
 <!-- CONTACT SECTION  -->               
-<div class="row">
+<div class="contact-section row">
     <div class="medium-6 columns">
         <p class="contact">Contact Me</p>
         <ul class="menu">
         <div class="icon-list">
-            <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
             <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
+            <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
             <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
         </div>
         </ul>

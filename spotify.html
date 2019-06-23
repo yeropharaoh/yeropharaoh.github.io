@@ -19,51 +19,78 @@
 </head>
 <body>
 
-<div class="row">
-    <div class="nav-whole large-12 columns">
-        <div class="yer small-1 large-5">
-        <a href="index.html"> <img class="large-4 switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
+<!-- NAV -->
+<div class="nav-whole row">
+    <div class="column small-5">
+        <div class="yer">
+        <a href="index.html"> <img class="switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
         <p class="title">Yero Schutte</p></a>
         </div>
-        <div class="nav-bar right large-3">
-            <nav class="hover-underline-menu" data-menu-underline-from-center>
-                <ul class="menu align-center">
-                    <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                    <li><a href="index.html#work" class="button" id="workbtn" style="color: white;">Work</a></li>
-                    <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
-              </ul>
-          </nav>
-      </div>
-      <hr id="proj-area" class="hr1"/>
     </div>
+    <div class="nav-bar right column small-6">
+        <nav class="hover-underline-menu" data-menu-underline-from-center>
+            <ul class="menu align-center">
+                <li><a href="index.html" class="button" id="homebtn">Home</a></li>
+                <li><a href="#work" class="button" id="workbtn" style="color: white;">Work</a></li>
+                <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
+                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr id="proj-area" class="hr1"/>
 </div>
 
 <!-- GIF Display -->
-<div class="spotify-page row">
-    <h4>Playlist generator and beat-making music app</h4>
-    <h6>As my final project for the NYCDA full-stack intensive, I used Microsoft's Emotion API to generate a YouTube video based on the facial emotion portayed in an uploaded image.
-  <p>*due to Spotify's recent API changes, the code was changed to match YouTube videos instead.</p></h6>
-    <p>Uses: <em>Rapid API, Emotion API, Spotify API, Web audio API, JavaScript, Materialize, Pug, Css</em></p>
-    <br>
-    <div class="display">
-        <a href="yieldr-ahub.html#proj-area" class="gifnav">&#8249;|</a>
-        <div class="gifarea">
-            <img class="switch-img" data-alt-src="images/spot.gif" src="images/spot-still.jpg"/> 
+<div class="spotify-page">
+    <div class="row">
+        <div class="proj-description column small-12">        
+            <h4>Playlist generator and beat-making music app</h4>
+            <h6 class="text">As my final project for the NYCDA full-stack intensive, I used Microsoft's Emotion API to generate a YouTube video based on the facial emotion portayed in an uploaded image.
+            <p class="text">*due to Spotify's recent API changes, the code was changed to match YouTube videos instead.</p></h6>
+            <h6>Uses: <em>Rapid API, Emotion API, Spotify API, Web audio API, JavaScript, Materialize, Pug, Css</em></h6>
         </div>
-        <a href="vaporwave.html#proj-area" class="gifnav">|&#8250;</a>
     </div>
-    <br>
-    <hr>
-    <h6>The second feature lets you make music by playing/selecting loops that I created in Ableton Live.
-<p> The loops can either be clicked on or triggered by your keyboard! Some JavaScript and the Web audio API were used to achieve this.</p></h6>
-    <div class="display2">
-        <div class="gifarea"><img src="images/spotbeat.gif" /></div>
+    <div class="row">
+        <div class="display">
+            <div class="proj-nav column small-1">
+                <a href="yieldr-ahub.html#proj-area" class="gifnav" id="left">&#8249;|</a>
+            </div>
+            <div class="img-div column small-10">
+                <div class="gifarea">
+                    <img class="switch-img" data-alt-src="images/spot.gif" src="images/spot-still.jpg"/> 
+                </div>
+            </div>        
+            <div class="proj-nav column small-1">
+                <a href="vaporwave.html#proj-area" class="gifnav" id="right">|&#8250;</a>
+            </div>
+        </div>
     </div>
-    <div class="moreinfo">
-        <br>
-        <h5>view the repository on GitHub:</h5>
-        <div class="icon-list">
-            <a href="https://github.com/yeropharaoh/Music-related-API-mashup-and-music-making-site" target="me github"><i class="fi-social-github"></i></a>
+
+    <hr class="spotify-hr">
+
+    <div class="row">
+        <div class="column small-12">  
+            <h6>The second feature lets you make music by playing/selecting loops that I created in Ableton Live.
+            <p> The loops can either be clicked on or triggered by your keyboard! Some JavaScript and the Web audio API were used to achieve this.</p></h6>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="display2">
+            <div class="img-div column small-12">
+                <div class="gifarea">
+                    <img src="images/spotbeat.gif" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="moreinfo column small-12">
+            <br>
+            <h5>view the repository on GitHub:</h5>
+            <div class="icon-list">
+                <a href="https://github.com/yeropharaoh/Music-related-API-mashup-and-music-making-site" target="me github"><i class="fi-social-github"></i></a>
+            </div>
         </div>
     </div>
 </div>
@@ -71,13 +98,13 @@
 <br>
 
 <!-- CONTACT SECTION  -->               
-<div class="row">
+<div class="contact-section row">
     <div class="medium-6 columns">
         <p class="contact">Contact Me</p>
         <ul class="menu">
         <div class="icon-list">
+            <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>            
             <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
-            <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
             <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
         </div>
         </ul>
