@@ -14,6 +14,11 @@ function scrollAnchor (desiredHeight) {
 $(document).ready(() => {
   scrollAnchor(10);
   
+  // REMOVE NAV UNDERLINE HOVER FOR MOBILE
+  if (window.matchMedia('(min-width: 767px)').matches) {
+    $("[data-menu-underline-from-center] a").addClass("underline-from-center");        
+  }
+
   // IMAGE SWAP ON HOVER
   let sourceSwap = function () {
     let $this = $(this);

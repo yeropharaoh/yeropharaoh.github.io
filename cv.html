@@ -36,9 +36,9 @@
         <nav class="hover-underline-menu" data-menu-underline-from-center>
             <ul class="menu align-center">
                 <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                <li><a href="#work" class="button" id="workbtn" style="color: white;">Work</a></li>
-                <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
-                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
+                <li><a href="index.html" class="button" id="workbtn">Work</a></li>
+                <li><a href="cv.html" class="button" id="cvtbn" style="color: white;">CV</a></li>
+                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob" style="color: white;">CV</a></li>
             </ul>
         </nav>
     </div>
@@ -55,10 +55,15 @@
                     <div class='work'>Working Experience</div>
                   </div>
                   <ul class='highlights'>
-                      <li>Software Engineer<span class='date'>Nov 2017 - present </span></li>
-                      <li><span class='company'>Yieldr</span></li>  
+                      <li>Software Engineer<span class='date'>Nov 2017 - May 2019</span></li>
+                      <li><span class='company'>Yieldr</span></li>
+                      <li class="description"><span>Formed the Web Team with one other colleague where we were responsible for the creation and improvement of 3 company websites:
+                        the main site, a blog site (built with Ghost), and the Airline Hub (built in VueJS and Angular 7). The blog gained almost 6000 subscribers in less than a year 
+                        and all together the websites helped position Yieldr as a thought leader in the aviation-tech space 
+                        with over 290 content and product signups in about 6 weeks.
+                      </span></li>  
                       <div class='divider'></div>
-                      <li>Freelance Composer/Designer<span class='date'>Jan 2014 - present </span></li>
+                      <li>Freelance Composer/Sound Designer<span class='date'>Jan 2014 - present </span></li>
                       <li><span class='company'>yero pharaoh </span></li>
                       <div class='divider'></div>
                       <li>Post-production Intern<span class='date'>Sep 2010 -Jan 2011</span></li>
@@ -71,12 +76,13 @@
                     <ul class='highlights'>
                       <li>Fullstack Development Intensive<span class='date'>Jun 2017 - Sep 2017</span></li>
                       <li><span class='company'>NYCDA Amsterdam</span></li>
+                      <li><span></span></li>
                       <div class='divider'></div>
                       <li>MA in Media Innovation<span class='date'>Sep 2012 - Sep 2013</span></li>
-                      <li><span class='company'>NHTV University of Applied Sciences</span></li>
+                      <li><span class='company'>Breda University of Applied Sciences (BUAS)</span></li>
                       <div class='divider'></div>
                       <li>BA in Media & Entertainment Management<span class='date'>Sep 2008 - June 2012</span></li>
-                      <li><span class='company'>NHTV University of Applied Sciences</span></li>
+                      <li><span class='company'>Breda University of Applied Sciences (BUAS)</span></li>
                       <div class='divider'></div>
                     </ul>
                
@@ -91,7 +97,7 @@
       css 3
       jQuery
       angular
-      vuejs
+      vue
       handlebars
       pug
       zurb foundation
@@ -99,8 +105,8 @@
 
   .back-end { 
       javaScript
-      node-js
-      express
+      node.js
+      express.js
       sequelize
       postgreSQL
       gulp
@@ -114,14 +120,23 @@
     marvel
     photoshop cc
     adobe premiere cc
+    audio engineer
   }
       </code>
     </pre>
-
         
       </div>
     </div>
 </div>
+
+<div class="row">
+  <div class="pdf-div column small-12 medium-6">
+    <a href="/includes/cv.pdf" target="_blank">
+      <button class="button expanded" id="pdf-button">Download as PDF</button>
+    </a>
+  </div>
+</div>
+
 <hr class="hr-cv">
 <br>
 
@@ -157,10 +172,6 @@
 <div class="copyright">
     <h6>&copy; Yero Schutte 2019</h6>
 </div>
-
-<script>
-        $("[data-menu-underline-from-center] a").addClass("underline-from-center");
-</script>
 
 </body>
 </html>

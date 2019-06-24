@@ -31,7 +31,7 @@
         <nav class="hover-underline-menu" data-menu-underline-from-center>
             <ul class="menu align-center">
                 <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                <li><a href="#work" class="button" id="workbtn" style="color: white;">Work</a></li>
+                <li><a href="index.html" class="button" id="workbtn" style="color: white;">Work</a></li>
                 <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
                 <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
             </ul>
@@ -45,14 +45,11 @@
     <div class="row">
         <div class="column small-12">
             <h4>The Airline Hub: a collection of the world's airlines and the technologies they use</h4>
-            <p class="text">As a more experimental third project, I was tasked together with another colleague to create the airline hub as a means to get more interest from airlines.
-                The website's ambition was to provide aesthetically-pleasing information on all of the world's airlines. We first built the site in VueJS and later in Angular 7.
-                A Google Sheet was created for the marketing team to fill in/update airline data. The sheet data was converted into JSON and the airline-tail SVG's placed in the sheet 
-                as links from our CDN.
-                The airlines are sorted alphabetically and divided into low-cost and full-service airlines.
-                Furthermore, users can search for airline name, technology, or country of airlines. 
+            <p class="text">As a more experimental third project, a colleague and I first built the airline hub in Vue before building it out fully in Angular. Since the website wanted to have/update information of many of the world's airlines, a Google Sheet was created for the marketing team to fill in/update airline data.
+                 The sheet data was converted into JSON and and API helped us fetch and display the data. The airlines are sorted alphabetically and divided into low-cost and full-service airlines.
+                Users are able to search for airlines by name, technology and country. All three Yieldr websites helped position Yieldr as a thought leader in the aviation-tech space with over 290 content and product signups in about 6 weeks.
             </p>
-            <h6>Stack: <em>angular 7, ngx-pagination, zurb foundation, sass, nodejs.</em></h6>
+            <h6>Stack: <em>angular 7, ngx-pagination, google sheet api, zurb foundation, sass, nodejs.</em></h6>
         </div>
     </div>
     <div class="row">
@@ -112,10 +109,6 @@
 <div class="copyright">
     <h6>&copy; Yero Schutte 2019</h6>
 </div>
-
-<script>
-        $("[data-menu-underline-from-center] a").addClass("underline-from-center");
-</script>
 
 </body>
 </html>
