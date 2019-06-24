@@ -55,9 +55,12 @@
         <div class="display">
             <div class="column small-11">
                 <div class="gifarea">
-                    <video src="images/vid-yieldr-group.mp4" loop type="video/mp4"
-                    Your browser doesn't support HTML5 video tag.>
-                    </video>
+                    <video video-auto-ctrl loop muted preload poster="images/gif-yieldr.gif">
+                        <source src="images/vid-yieldr-group.webm" type="video/webm">
+                        <source src="images/vid-yieldr-group.mp4" type="video/mp4">
+                        <img src="images/gif-yieldr.gif" alt="vid-static"
+                        title="Your browser does not support the HTML5 <video> tag">
+                    </video>    
                 </div>
             </div>        
             <div class="proj-nav column small-1">
