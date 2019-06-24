@@ -9,90 +9,130 @@
 <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- my css & font -->
 <link rel="stylesheet" type="text/css" href="includes/main.css">
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
 <!-- typedJS -->
   <script src="includes/typed.min.js" type="text/javascript"></script>
   <script src="includes/script.js"></script>
   <!-- <link href="assets/demos.css" rel="stylesheet"/> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script> -->
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
 </head>
 <body>
 
-<div class="row">
-    <div class="large-12 columns">
-        <h1>Yero Schutte <img id="logo" <a href="#" src="images/logo.gif"></a></h1>
-          <div class="nav-bar right">
-            <nav class="hover-underline-menu" data-menu-underline-from-center>
-                <ul class="menu align-center">
-                    <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                    <li><a href="index.html#work" class="button" id="musicbtn">Work</a></li>
-                    <li><a href="cv.html" class="button" id="aboutbtn">CV</a></li>
-                </ul>
-            </nav>
-        </div>
-        <hr/>
+<div class="nav-whole row">
+    <div class="column small-5">
+      <div class="yer">
+        <a href="#"> <img class="switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
+        <p class="title">Yero Schutte</p></a>
+      </div>
     </div>
+    <div class="nav-bar right column small-6">
+        <nav class="hover-underline-menu" data-menu-underline-from-center>
+            <ul class="menu align-center">
+                <li><a href="index.html" class="button" id="homebtn">Home</a></li>
+                <li><a href="#work" class="button" id="workbtn">Work</a></li>
+                <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
+                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr class="hr1"/>
 </div>
 
 <!-- TYPED -->
-<div class="row">
+<div class="section-typed row">
     <div class="large-12 columns">
-        <h4><a name="about"></a></h4>
         <div class="type-wrap">
-            <span id="typed" style="white-space:pre; font-size: 26px"></span>
+            <span id="typed"></span>
         </div>
-        <br>
-        <br>
     </div>
 </div>
 
 <!-- WORK  -->
 <!-- <div class="row"> -->
-<div class="large-12 row columns">
-<h3><a name="work"></a>Impressions & Work</h3>
+<div class="section-work large-12 row columns">
+<p class="title"><a id="work"></a>Impressions & Work</p>
 
-<!-- first row portfolio -->
-  <div class="row small-up-2 medium-up-3 large-up-4">
-      <div class ="column">
-        <div class ="shine1">
-          <figure><a href="spotify.html"><img src="images/spotpreview.gif"/></a></figure>
-          <span>music playlist generator API mashup + beat maker!</span>
-        </div>
+<!-- first row -->
+<div class="work-row row small-up-1 medium-up-2 large-up-3">
+    <div class ="column">
+      <div class ="zoom shine1">
+        <figure><a href="yieldr.html">
+            <img class="switch-img" data-alt-src="images/gif-yieldr.gif" src="images/yieldr-prev.jpeg"/></a>
+        </figure>
+        <span class="proj-span">Yieldr (airline SaaS company) group site</span>
       </div>
+    </div>  
+  
+    <div class ="column">
+      <div class ="zoom shine1">
+          <figure><a href="yieldr-blog.html">
+            <img class="switch-img" data-alt-src="images/gif-blog.gif" src="images/blog-prev.jpeg"/></a>
+          </figure>
+          <span class="proj-span">Yieldr blog built with Ghost(CMS)</span>
+        </div>
+    </div>
 
-      <div class="column">
-        <div class ="shine1">
-          <figure><a href="vaporwave.html"><img src="images/vaporpreview.gif"/></a></figure>
-          <span>My first website ever!</span>
-        </div>
-      </div>                          
-      
-      <div class ="column">
-        <div class ="shine1">
-            <figure><a href="pirate.html"><img src="images/piratepreview.gif"/></a></figure>
-            <span>Basic blog app for pirates</span>
-        </div>
-      </div>    
+    <div class="column">
+      <div class ="zoom shine1">
+        <figure><a href="yieldr-ahub.html">
+          <img class="switch-img" data-alt-src="images/gif-ahub.gif" src="images/ahub-prev.jpeg"/></a>
+        </figure>
+        <span class="proj-span">Angular-made Airline Hub</span>
+      </div>
+    </div>                          
   </div>
 
-<!-- second row portfolio  -->                           
-  <div class="row small-up-2 medium-up-3 large-up-4">
-        <div class ="column">
-          <div class ="zoom">
-              <figure><a href="rap.html"><img src="images/rappreview.gif"/></a></figure>
-              <span>first jQuery exercise</span>
-          </div>
-        </div>
+<!-- second row -->
+  <div class="work-row row small-up-1 medium-up-2 large-up-3">
+    <div class ="column">
+      <div class ="zoom shine1">
+        <figure><a href="spotify.html">
+          <img class="switch-img" data-alt-src="images/spotpreview.gif" src="images/spotprev.jpeg"/></a>
+        </figure>
+        <span class="proj-span">NYCDA final project: playlist generating API mashup + beat maker!</span>
+      </div>
+    </div>
 
+    <div class="column">
+      <div class ="zoom shine1">
+        <figure><a href="vaporwave.html"><img src="images/vaporpreview.gif"/></a></figure>
+        <span class="proj-span">NYCDA exercise: My first website ever!</span>
+      </div>
+    </div>                          
+
+    <div class ="column">
+      <div class ="zoom shine1">
+          <figure><a href="pirate.html">
+            <img class="switch-img" data-alt-src="images/piratepreview.gif" src="images/pirateprev.jpeg"/></a>
+          </figure>
+          <span class="proj-span">NYCDA exercise: Basic blog app for pirates</span>
+      </div>
+    </div> 
+  </div>
+
+<!-- third row  -->                           
+  <div class="work-row row small-up-1 medium-up-2 large-up-3">
+    <div class ="column">
+        <div class ="zoom shine1">
+            <figure><a href="rap.html">
+              <img class="switch-img" data-alt-src="images/rappreview.gif" src="images/rapprev.jpeg"/></a>
+            </figure>
+            <span class="proj-span">NYCDA exercise: jQuery experimentation</span>
+        </div>
+      </div>
       <div class="column">
-        <div class ="zoom">
-          <figure><a href="beach.html"><img src="images/beachpreview.gif"/></a></figure>
-          <span>Basic packinglist app</span>
+        <div class ="zoom shine1">
+          <figure><a href="beach.html">
+            <img class="switch-img" data-alt-src="images/beachpreview.gif" src="images/beachprev.jpeg"/></a>
+          </figure>
+          <span class="proj-span">NYCDA exercise: Basic packinglist app</span>
         </div>
       </div>        
   </div>  
@@ -105,23 +145,22 @@
 <!-- CONTACT SECTION  -->               
 <div class="row">
     <div class="medium-6 columns">
-      <h3>Contact Me</h3>
-      <p>Find me below</p>
+      <p class="contact">Contact Me</p>
       <ul class="menu">
         <div class="icon-list">
-            <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
             <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
-            <a href="http://yeropharaoh.com/" target="_blank"><i class="fi-music"></i></a>
+            <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
+            <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
         </div>
       </ul>
     </div>
     <div class="medium-6 columns">
-    <form action="mailto:yeroffx@gmail.com" method="GET">
+    <form action="mailto:yeroschutte@gmail.com" method="GET">
         <label>Name
-          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Your Name">
         </label>
         <label>Email
-          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Your E-mail">
         </label>
         <label>
           Message
@@ -131,19 +170,10 @@
     </form>
     </div>
 </div>
-<br>
+
 <div class="copyright">
-  <h6>&copy; Yero Schutte 2017</h6>
+  <h6>&copy; Yero Schutte 2019</h6>
 </div>
-
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/foundation.min.js"></script>
-<script>
-      $(document).foundation();
-      $("[data-menu-underline-from-center] a").addClass("underline-from-center");
-</script>
 
 </body>
 </html>

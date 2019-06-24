@@ -3,115 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work: Spotify API mashup</title>
+  <title>Yero's Portfolio</title>
 
 <!-- foundation css -->
 <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-<!-- css & font -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- my css & font -->
 <link rel="stylesheet" type="text/css" href="includes/main.css">
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<!-- includes -->
-<script src="includes/script.js"></script>
-<!-- highlight -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+<!-- typedJS -->
+  <script src="includes/typed.min.js" type="text/javascript"></script>
+  <script src="includes/script.js"></script>
 </head>
 <body>
 
-<div class="row">
-    <div class="large-12 columns">
-        <h1>Yero Schutte <img id="logo" <a href="#" src="images/logo.gif"></a></h1>
-          <div class="nav-bar right">
-            <nav class="hover-underline-menu" data-menu-underline-from-center>
-                <ul class="menu align-center">
-                    <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                    <li><a href="index.html#work" class="button" id="musicbtn">Work</a></li>
-                    <li><a href="cv.html" class="button" id="aboutbtn">CV</a></li>
-                </ul>
-            </nav>
+<!-- NAV -->
+<div class="nav-whole row">
+    <div class="column small-5">
+        <div class="yer">
+        <a href="index.html"> <img class="switch-img" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
+        <p class="title">Yero Schutte</p></a>
         </div>
-        <hr/>
     </div>
+    <div class="nav-bar right column small-6">
+        <nav class="hover-underline-menu" data-menu-underline-from-center>
+            <ul class="menu align-center">
+                <li><a href="index.html" class="button" id="homebtn">Home</a></li>
+                <li><a href="index.html" class="button" id="workbtn" style="color: white;">Work</a></li>
+                <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
+                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr id="proj-area" class="hr1"/>
 </div>
 
 <!-- GIF Display -->
-<div class="row">
-    <h4>Playlist generator and beat-making music web app</h4>
-    <h6>Using Spotify's and Microsoft's Emotion API, a playlist can be generated based on the facial emotion portayed in an image.
-  <p>*due to Spotify's recent API changes, the playlists can not be generated. Matching Youtube videos are used instead.</p></h6>
-    <p>Uses: <em>Rapid API, Emotion API, Spotify API, Web audio API, javascript, materialize, pug, CSS3</em></p>
-    <br>
-    <div class="display">
-        <a href="#" class="gifnav" target="prev">&#8249;|</a>
-        <div class="gifarea"><img src="images/spot.gif" /></div>
-        <a href="vaporwave.html" class="gifnav" target="next">|&#8250;</a>
+<div class="spotify-page">
+    <div class="row">
+        <div class="proj-description column small-12">        
+            <h4>Playlist generator and beat-making music app</h4>
+            <p class="text">As my final project for the NYCDA full-stack intensive, I used Microsoft's Emotion API to generate a YouTube video based on the facial emotion portayed in an uploaded image.
+            <p class="text">Due to Spotify's recent API changes, the code was changed last-minute to match YouTube videos instead.</p>
+            <h6>Uses: <em>rapid API, emotion API, spotify API, web audio API, javaScript, materialize, pug, css</em></h6>
+        </div>
     </div>
-    <br>
-    <hr>
-    <h6>The second feature lets you make music by playing/selecting loops that I created in Ableton Live.
-<p> The loops can either be clicked on or triggered by your keyboard! Some javascript and the Web audio API were used to achieve this.</p></h6>
-    <div class="display2">
-        <div class="gifarea"><img src="images/spotbeat.gif" /></div>
+    <div class="row">
+        <div class="display">
+            <div class="proj-nav column small-1">
+                <a href="yieldr-ahub.html#proj-area" class="gifnav" id="left">&#8249;|</a>
+            </div>
+            <div class="img-div column small-10">
+                <div class="gifarea">
+                    <img class="switch-img" data-alt-src="images/spot.gif" src="images/spot-still.jpg"/> 
+                </div>
+            </div>        
+            <div class="proj-nav column small-1">
+                <a href="vaporwave.html#proj-area" class="gifnav" id="right">|&#8250;</a>
+            </div>
+        </div>
     </div>
-    <div class="moreinfo">
-        <br>
-        <h5>view the repository on GitHub:</h5>
-        <div class="icon-list">
-            <a href="https://github.com/yeropharaoh/Music-related-API-mashup-and-music-making-site" target="me github"><i class="fi-social-github"></i></a>
+
+    <hr class="spotify-hr">
+
+    <div class="row">
+        <div class="column small-12">  
+            <p class="text">The second feature lets you make music by playing/selecting loops that I created in Ableton Live.
+            The loops can either be clicked on or triggered by your keyboard! Some JavaScript and the Web audio API were used to achieve this.</p>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="display2">
+            <div class="img-div column small-12">
+                <div class="gifarea">
+                    <img src="images/spotbeat.gif" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="moreinfo column small-12">
+            <br>
+            <h5>view the repository on GitHub:</h5>
+            <div class="icon-list">
+                <a href="https://github.com/yeropharaoh/Music-related-API-mashup-and-music-making-site" target="me github"><i class="fi-social-github"></i></a>
+            </div>
         </div>
     </div>
 </div>
 <hr>
 <br>
-<br>
 
 <!-- CONTACT SECTION  -->               
-<div class="row">
-  <div class="medium-6 columns">
-      <h3>Contact Me</h3>
-      <p>Find me below</p>
-      <ul class="menu">
-          <div class="icon-list">
-              <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
-              <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
-              <a href="http://yeropharaoh.com/" target="_blank"><i class="fi-music"></i></a>
-          </div>
-      </ul>
-  </div>
-  <div class="medium-6 columns">
-      <form action="mailto:yeroffx@gmail.com" method="GET">
-          <label>Name
-              <input type="text" placeholder="Name">
-          </label>
-          <label>Email
-              <input type="text" placeholder="Email">
-          </label>
-          <label>
-              Message
-              <textarea placeholder="Let's meet!"></textarea>
-          </label>
-          <input type="submit" class="button expanded" value="Submit">
-      </form>
-  </div>
+<div class="contact-section row">
+    <div class="medium-6 columns">
+        <p class="contact">Contact Me</p>
+        <ul class="menu">
+        <div class="icon-list">
+            <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>            
+            <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
+            <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
+        </div>
+        </ul>
+    </div>
+    <div class="medium-6 columns">
+    <form action="mailto:yeroschutte@gmail.com" method="GET">
+        <label>Name
+            <input type="text" placeholder="Your Name">
+        </label>
+        <label>Email
+            <input type="text" placeholder="Your E-mail">
+        </label>
+        <label>
+            Message
+            <textarea placeholder="Let's meet!"></textarea>
+        </label>
+        <input type="submit" class="button expanded" value="Submit">
+    </form>
+    </div>
 </div>
 
-<br>
 <div class="copyright">
-  <h6>&copy; Yero Schutte 2017</h6>
-</div>  
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.2/js/foundation.min.js"></script>
-<script>
-      $(document).foundation();
-      $("[data-menu-underline-from-center] a").addClass("underline-from-center");
-</script>
+    <h6>&copy; Yero Schutte 2019</h6>
+</div>
 
 </body>
 </html>
