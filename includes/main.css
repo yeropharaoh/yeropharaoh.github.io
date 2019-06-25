@@ -39,6 +39,10 @@ p {
   white-space: normal;
 }
 
+span, h6, .proj-description p {
+  font-family: 'Lato', sans-serif;
+}
+
 hr {
   margin-top: 0;
   border-color: white;
@@ -61,6 +65,10 @@ hr {
   font-weight: 600;
   text-transform: uppercase;
   color: #333333;
+}
+
+.title.no-top {
+  padding-top: 0;
 }
 
 .contact {
@@ -143,7 +151,7 @@ hr {
 
 #typed {
   white-space: pre;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 figure, figure img {
@@ -214,6 +222,11 @@ figure, figure img {
 
 p.hover-text {
   margin-bottom: 8px;
+  text-align: center;
+}
+
+.spotify-page h5.hover-text {
+  margin-top: 8px;
   text-align: center;
 }
 
@@ -318,7 +331,7 @@ ul.highlights li {
 }
 
 ul.highlights .description {
-  width: 90%;
+  width: 85%;
   margin-top: 0.8em;
 }
 
@@ -511,6 +524,7 @@ animation: shine .75s;
     padding-bottom: 3em;
   }
   .work-row {
+    display: -webkit-inline-box;
     padding-bottom: 10px;
   }
   .proj-span {
@@ -520,7 +534,7 @@ animation: shine .75s;
   .display, .gifarea {
     height: 310px;
   }
-  p.hover-text {
+  p.hover-text, h5.hover-text {
     display: none;
   }
   p.visit-text {
@@ -550,6 +564,9 @@ animation: shine .75s;
   .nav-bar.right {
     float: right;
     padding-top: 5px;
+  }
+  #workbtn:hover {
+    color: initial;
   }
   #logo {
     width: 60%;
@@ -582,7 +599,7 @@ animation: shine .75s;
   p.text {
     font-size: 16px;
   }
-  p.hover-text {
+  p.hover-text, h5.hover-text {
     display: none;
   }
   p.visit-text {
@@ -597,6 +614,9 @@ animation: shine .75s;
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
+  .work-row {
+    padding-bottom: 0;
+  }
   .display, .gifarea {
     height: 175px;
   }
@@ -611,19 +631,39 @@ animation: shine .75s;
     margin-bottom: 2em;
   }
   h4 {
+    margin-bottom: 16px;
+  }
+  .proj-description h6 {
+    font-size: 18px;
+  }
+  h4, p.title {
     font-size: 22px;
+  }
+  p.text {
+    font-size: 18px;
+  }
+  .type-wrap {
+    height: 100px;
+  }
+  #typed {
+    white-space: normal;
   }
 }
 
 @media (max-width: 424px) {
+
+
+  .gifnav#right {
+    left: 0;
+  }
+}
+
+@media (max-width: 320px) {
   .type-wrap {
     height: 90px;
   }
   #typed {
-    font-size: 20px;
+    font-size: 24px;
     white-space: normal;
-  }
-  .gifnav#right {
-    left: 0;
   }
 }
