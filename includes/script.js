@@ -11,14 +11,6 @@ function scrollAnchor (desiredHeight) {
   });
 };
 
-$(document).ready(() => {
-  scrollAnchor(10);
-  
-  // REMOVE NAV UNDERLINE HOVER FOR MOBILE
-  if (window.matchMedia('(min-width: 767px)').matches) {
-    $("[data-menu-underline-from-center] a").addClass("underline-from-center");        
-  }
-
   // IMAGE SWAP ON HOVER
   let sourceSwap = function () {
     let $this = $(this);
@@ -26,21 +18,45 @@ $(document).ready(() => {
     $this.data('alt-src', $this.attr('src'));
     $this.attr('src', newSource);
   }
-  $(function() {
-    $('img[data-alt-src].switch-img').each(function() { 
-        new Image().src = $(this).data('alt-src'); 
-    }).hover(sourceSwap, sourceSwap); 
-  });
 
-  // VIDEO HOVER
-  $(".gifarea").hover( hoverVideo, hideVideo );
+$(document).ready(() => {
+  scrollAnchor(10);
   
-  function hoverVideo(e) {  
-    $('video', this).get(0).play(); 
+// FOR TABLET AND LARGER
+  if (window.matchMedia('(min-width: 767px)').matches) {
+    // REMOVE NAV UNDERLINE FOR MOB
+    $("[data-menu-underline-from-center] a").addClass("underline-from-center");     
+   
+    // IMG-SWITCH
+    $('img[data-alt-src].switch-img').each(function() { 
+      new Image().src = $(this).data('alt-src'); 
+    }).hover(sourceSwap, sourceSwap); 
+   
+    // VIDEO HOVER
+    $(".gifarea").hover( hoverVideo, hideVideo );
+    
+    function hoverVideo(e) {  
+      $('video', this).get(0).play(); 
+    }
+    function hideVideo(e) {
+      $('video', this).get(0).pause(); 
+    }
   }
-  function hideVideo(e) {
-    $('video', this).get(0).pause(); 
-  }
+
+// DISABLE IMG-SWITCH FOR MOBILE
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    //DELAY GIFS ON INDEX PAGE
+    setTimeout(function(){ 
+      $('img[data-alt-src].switch-img.index').each(function() { 
+        new Image().src = $(this).data('alt-src'); 
+      }).show(sourceSwap);
+    }, 10000)
+
+    $('img[data-alt-src].switch-img.not-index').each(function() { 
+      new Image().src = $(this).data('alt-src'); 
+    }).show(sourceSwap);
+  };
+
 });
 
 //TYPED.js
