@@ -7,10 +7,8 @@ body {
   color: #333333;
   background-repeat: no-repeat;
   background-size: cover;
-  background:linear-gradient(to top, #40e0d0 , #e0dab5) fixed;
-  /* background:linear-gradient(to bottom, #FC756A , #E7B7CF) fixed;  */
-  animation: pulse 3s;
-  /* cursor: url(https://img.icons8.com/wired/64/000000/technology-items.png), auto; */
+  background: linear-gradient(to left top, #63ace5, #a1b1eb, #cdb8e9, #ecc3e3, #ffd1e0) fixed;
+  animation: pulse 2.5s;
 }
 
   @keyframes pulse {
@@ -106,6 +104,7 @@ hr {
 }
 
 .nav-bar.right {
+  float: right;
   padding-top: 21px;
 }
 
