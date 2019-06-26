@@ -289,6 +289,10 @@ video {
   height: inherit;
 }
 
+.mob-vid-gif {
+  display: none;
+}
+
 .gifarea img{
   height: inherit;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -610,11 +614,20 @@ animation: shine .75s;
     width: 100%;
   }
   .type-wrap {
-    height: 175px;
+    height: 150px;
   }
   #typed {
-    font-size: 48px;
-    white-space: normal; 
+    font-size: 40px;
+    white-space: normal;
+  }
+  video {
+    display: none;
+  }
+  .mob-vid-gif {
+    display: inline-block;
+  }
+  #group-site .gif-area {
+    height: 200px;
   }
 }
 

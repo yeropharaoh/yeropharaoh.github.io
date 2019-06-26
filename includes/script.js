@@ -27,7 +27,7 @@ $(document).ready(() => {
     // REMOVE NAV UNDERLINE FOR MOB
     $("[data-menu-underline-from-center] a").addClass("underline-from-center");     
    
-    // // IMG-SWITCH
+    // IMG-SWITCH
     $('img[data-alt-src].switch-img').each(function() { 
       new Image().src = $(this).data('alt-src'); 
     }).hover(sourceSwap, sourceSwap); 
@@ -40,7 +40,7 @@ $(document).ready(() => {
       $('img[data-alt-src].switch-img.index').each(function() { 
         new Image().src = $(this).data('alt-src'); 
       }).show(sourceSwap);
-    }, 10000)
+    }, 15000)
 
     $('img[data-alt-src].switch-img.not-index').each(function() { 
       new Image().src = $(this).data('alt-src'); 
