@@ -610,6 +610,13 @@ animation: shine .75s;
   .cvbox pre {
     width: 100%;
   }
+  .type-wrap {
+    height: 175px;
+  }
+  #typed {
+    font-size: 48px;
+    white-space: normal; 
+  }
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -640,29 +647,17 @@ animation: shine .75s;
   }
   p.text {
     font-size: 18px;
-  }
-  .type-wrap {
-    height: 100px;
-  }
-  #typed {
-    white-space: normal;
-  }
+  } */
 }
 
 @media (max-width: 424px) {
-
-
-  .gifnav#right {
-    left: 0;
-  }
-}
-
-@media (max-width: 320px) {
   .type-wrap {
-    height: 90px;
+    height: 135px;
   }
   #typed {
-    font-size: 24px;
-    white-space: normal;
+    font-size: 35px;
+  }
+  .gifnav#right {
+    left: 0;
   }
 }
