@@ -647,7 +647,7 @@ animation: shine .75s;
   }
   p.text {
     font-size: 18px;
-  } */
+  }
 }
 
 @media (max-width: 424px) {
@@ -656,6 +656,18 @@ animation: shine .75s;
   }
   #typed {
     font-size: 35px;
+  }
+  .gifnav#right {
+    left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .type-wrap {
+    height: 110px;
+  }
+  #typed {
+    font-size: 28px;
   }
   .gifnav#right {
     left: 0;
