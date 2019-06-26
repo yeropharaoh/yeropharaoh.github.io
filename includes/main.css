@@ -7,7 +7,7 @@ body {
   color: #333333;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(to left top, #63ace5, #a1b1eb, #cdb8e9, #ecc3e3, #ffd1e0) fixed;
+  background:linear-gradient(to bottom,#e5e980, #e5ea5f) fixed; 
   animation: pulse 2.5s;
 }
 
