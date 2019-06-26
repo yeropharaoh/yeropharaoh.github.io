@@ -523,7 +523,6 @@ animation: shine .75s;
     padding-bottom: 3em;
   }
   .work-row {
-    display: -webkit-inline-box;
     padding-bottom: 10px;
   }
   .proj-span {
