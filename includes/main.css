@@ -662,7 +662,7 @@ animation: shine .75s;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 374px) {
   .type-wrap {
     height: 110px;
   }
