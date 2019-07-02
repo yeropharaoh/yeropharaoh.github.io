@@ -23,6 +23,8 @@
 <!-- my css & font -->
 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="includes/main.css">
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/a68fe6aa5c.js"></script> 
 <!-- script -->
 <script src="includes/script.js"></script>
 </head>
@@ -50,26 +52,27 @@
 </div>
 
 <!-- GIF Display -->
-<div class="yieldr-page">
+<div class="yieldr-page" id="group-site">
     <div class="row">
         <div class="proj-description column small-12">
             <h4>Yieldr (SaaS aviation-tech start-up) group site</h4>
             <p class="text">Together with another colleague, our first task at Yieldr was to re-build and optimize the structure + development of the group website.
                     In addition all pages had to be built from scratch after a rebranding which involved design work as well.  
             </p>
-            <h6>Stack: <em>metalsmith.io, handlebars, markdown, express, gulp, sass, zurb foundation, html, jqeury, node.js, docker, kubernetes, aws</em></h6>
+            <h6>Stack: <strong>metalsmith.io, handlebars, markdown, express, gulp, sass, zurb foundation, html, jqeury, node.js, docker, kubernetes, aws</strong></h6>
         </div>
     </div>
     <div class="row">
         <div class="display">
             <div class="column small-11">
-                <div class="gifarea">
-                    <video loop autobuffer muted playsinline poster="images/gif-yieldr.gif">
+                <div class="gifarea vid-div">
+                    <video playsinline loop muted preload="metadata" preload="metadata">
                         <source src="images/vid-yieldr-group.webm" type="video/webm">
                         <source src="images/vid-yieldr-group.mp4" type="video/mp4">
                         <img src="images/gif-yieldr.gif" alt="vid-static"
                         title="Your browser does not support the HTML5 <video> tag">
-                    </video>    
+                    </video>
+                    <img class="mob-vid-gif" src="images/gif-yieldr.gif" alt="">    
                 </div>
             </div>        
             <div class="proj-nav column small-1">
@@ -94,6 +97,7 @@
         <div class="icon-list">
             <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
             <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
+            <a href="https://codepen.io/yeropharaoh/" target="me codepen"><i class="fab fa-codepen"></i></a>
             <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
         </div>
         </ul>
