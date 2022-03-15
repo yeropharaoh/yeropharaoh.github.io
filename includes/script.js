@@ -20,7 +20,8 @@ let sourceSwap = function () {
 }
 
 $(document).ready(() => {
-  scrollAnchor(10);
+  scrollAnchor(99);
+  // must be same height as navbar
   
 // FOR TABLET AND LARGER
   if (window.matchMedia('(min-width: 767px)').matches) {

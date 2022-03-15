@@ -3,11 +3,20 @@
 	padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  margin: 0;
   color: #333333;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: linear-gradient(to right top, #e5ea5f, #f3df69, #fcd476, #fecc85, #fbc594) fixed;
+  background-repeat: no-repeat; 
+  /* background-size: cover; */
+  background-attachment: fixed;
+  /* background: linear-gradient(to right top, #e5ea5f, #f3df69, #fcd476, #fecc85, #fbc594) fixed; */
+  /* background: #00A9F4; */
+  background-image: linear-gradient(135deg, #4CB9F6 70%, #DEE432 100%);
   animation: pulse 2.5s;
 }
 
@@ -46,10 +55,6 @@ hr {
   border-color: white;
 }
 
-.hr1 {
-  margin: 0;
-}
-
 .hr-cv {
   margin-top: 2em;
 }
@@ -58,19 +63,32 @@ hr {
   display: inline-block;
 }
 
+.yer .title {
+  font-size: 22px;
+  color: #3832E4;
+}
+
 .title, .contact {
   padding-top: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #333333;
 }
 
 .title.no-top {
-  padding-top: 0;
+  padding-top: 2em;
+  font-size: 24px;
 }
 
 .contact {
+  font-size: 24px;
   padding-top: 0;
+  color: #3832E4;
+}
+
+label {
+  line-height: 2;
+  font-weight: bold;
+  color: #DEE432;
 }
 
 /*LOGO*/
@@ -86,17 +104,18 @@ hr {
           transform: rotate(360deg);
 }
 
-/*NAV*/
-#homebtn, #cvtbn, #cv-mob, #workbtn {
+/*NAVIGATION*/
+#homebtn, #cvtbn, #cv-mob, #yieldrbtn, #nycdabtn {
 	background-color: transparent;
-  color: #333333;
-  font-size: 14px;
+  color: #3832E4;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-#homebtn:hover, #cvtbn:hover, #cv-mob:hover, #workbtn:hover {
-  color: white;
+#homebtn:hover, #cvtbn:hover, #cv-mob:hover, #yieldrbtn:hover, #nycdabtn:hover {
+  /* color: white; */
+  color: #DEE432;
 }
 
 #cvtbn, #cv-mob {
@@ -113,8 +132,9 @@ hr {
 }
 
 .hover-underline-menu .menu a {
-  color: #fefefe;
-  padding: 1.2rem 1.5rem;
+  /* color: #fefefe; */
+  color: #DEE432;
+  /* padding: 1.2rem 1.5rem; */
 }
 
 .hover-underline-menu .menu .underline-from-center {
@@ -125,7 +145,7 @@ hr {
   content: "";
   position: absolute;
   top: calc(100% - 0.125rem);
-  border-bottom: 0.125rem solid #fefefe;
+  border-bottom: 0.125rem solid #DEE432;
   left: 50%;
   right: 50%;
   transition: all 0.5s ease;
@@ -144,13 +164,17 @@ hr {
 
 .type-wrap{
   padding:10px;
+  background-color: papayawhip;
   border-radius:5px;
-  border:#fff 1px solid;
+  border:#DEE432 2px solid;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  /* box-shadow: 120px 80px 40px 20px #0ff; */
 }
 
 #typed {
   white-space: pre;
   font-size: 24px;
+  color: #3832E4;
 }
 
 figure, figure img {
@@ -162,12 +186,16 @@ figure, figure img {
   display: inline;  
   font-size: 3rem;
   text-decoration: none;
-  color: #333333;
+  color: #3832E4;
   padding: 2%;
 }
 
 .icon-list i:hover{
-  color: white;
+  color:#DEE432;
+}
+
+.icon-list .fa-codepen {
+  font-size: 2.8em;
 }
 
 .yero {
@@ -185,31 +213,77 @@ figure, figure img {
   margin-left: 400px;
 }
 
-[type=text], textarea {
+[type=text], [type=email], textarea {
   border-radius: 5px;
   border: white;
 }
 
-[type=text]:focus, textarea:focus {
-  border-color: #333333;
+[type=text]:focus, [type=email]:focus, textarea:focus {
+  border-color: #3832E4;
 }
 
 /* submit button  */
 .button.expanded{ 
   margin-top: 2em;
-  background-color: #333333;
+  padding: 1.2em;
+  background-color: #3832E4;
+  color: #DEE432;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
 }
 .button.expanded:hover {
-  background-color: white;
-  color: #333333;
+  background-color: #DEE432;
+  color: #3832E4;
 }
 
 /*WORK PAGE*/
 .nav-whole {
-  margin-bottom: 2em;
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+  /* background-color: white; */
+  background-color:#4CB9F6;
+  border-bottom: 1px dashed #3832E4;
+  /* background-image: linear-gradient(135deg, #4CB9F6 60%, #DEE432 100%); */
+}
+
+section {
+  /* margin-top: 1em; */
+}
+
+#yieldr-section {
+  background-color: #DEE432;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
+}
+
+#yieldr-section .title {
+  color: #3832E4;
+}
+
+#yieldr-section figure {
+  box-shadow: 0 4px 8px 0 rgb(56 50	228 / 20%), 0 6px 20px 0 rgb(56	50	228 / 19%);
+}
+
+#yieldr-section span {
+  color: #3832E4;
+}
+
+#nycda-section {
+  background-color: #3832E4;
+}
+
+#nycda-section figure {
+  box-shadow: 0 4px 8px 0 rgb(222	228	50 / 20%), 0 6px 20px 0 rgb(222	228	50 / 19%);
+}
+
+#nycda-section span {
+  color: #DEE432;
+}
+
+.nycdatitle {
+  color: #DEE432;
 }
 
 .work-row {
@@ -436,7 +510,8 @@ code.javascript {
   bottom: -20px;
   left: 0;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
   text-align: center;
   -webkit-transition: .3s ease-in-out;
@@ -490,11 +565,14 @@ animation: shine .75s;
 
 /*COPYRIGHT NOTICE*/
 .copyright {
-  margin: 3em auto 1em auto;
+  margin: 3em auto;
+  padding-bottom: 1em;
 }
 
-.copyright h6{
+.copyright h6 {
+  color: #3832E4;
   text-align: center;
+  font-weight: bold;
 }
 
 /* MEDIA QUERIS*/
@@ -568,7 +646,7 @@ animation: shine .75s;
     float: right;
     padding-top: 5px;
   }
-  #workbtn:hover, #homebtn:hover, #cv-mob:hover {
+  #yieldrbtn:hover, #homebtn:hover, #cv-mob:hover, #nycdabtn:hover {
     color: initial;
   }
   #logo {

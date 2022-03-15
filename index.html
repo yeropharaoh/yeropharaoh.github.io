@@ -21,6 +21,7 @@
 <!-- foundation css -->
 <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+<!-- <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script> -->
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- my css & font -->
@@ -43,101 +44,111 @@
 </head>
 
 <body>
-<div class="nav-whole row">
-    <div class="column small-5">
-      <div class="yer">
-        <a href="#"> <img class="switch-img index" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
-        <p class="title">Yero Schutte</p></a>
+  <!-- NAVIGATION -->
+  <div class="nav-whole">
+    <div class="row">
+      <div class="column small-5">
+        <div class="yer">
+          <a href="#"> <img class="switch-img index" id="logo" data-alt-src="images/logo.gif" src="images/logo-static.png"/>  
+          <p class="title">Yero Schutte</p></a>
+        </div>
+      </div>
+      <div class="nav-bar right column small-6">
+          <nav class="hover-underline-menu" data-menu-underline-from-center>
+              <ul class="menu align-center">
+                  <li><a href="index.html" class="button" id="homebtn">Home</a></li>
+                  <li><a href="#yieldr-section" class="button" id="yieldrbtn">Yieldr</a></li>
+                  <li><a href="#nycda-section" class="button" id="nycdabtn">NYCDA</a></li>
+                  <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
+                  <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
+              </ul>
+          </nav>
       </div>
     </div>
-    <div class="nav-bar right column small-6">
-        <nav class="hover-underline-menu" data-menu-underline-from-center>
-            <ul class="menu align-center">
-                <li><a href="index.html" class="button" id="homebtn">Home</a></li>
-                <li><a href="#work" class="button" id="workbtn">Work</a></li>
-                <li><a href="cv.html" class="button" id="cvtbn">CV</a></li>
-                <li><a href="/includes/cv.pdf" target="_blank" class="button" id="cv-mob">CV</a></li>
-            </ul>
-        </nav>
-    </div>
-    <hr class="hr1"/>
-</div>
+  </div>
 
-<!-- TYPED -->
-<div class="section-typed row">
+  <!-- TYPED -->
+  <div class="section-typed row">
     <div class="large-12 columns">
         <div class="type-wrap">
             <span id="typed"></span>
         </div>
     </div>
-</div>
+  </div>
+
 
 <!-- WORK  -->
 <!-- <div class="row"> -->
-<div class="section-work row column">
-  <p class="title no-top"><a id="work"></a>YIELDR</p>
+<div class="section-work">
 
-<!-- first row -->
-  <div class="work-row row small-up-1 medium-up-2 large-up-3">
-    <div class ="column">
-      <div class ="zoom shine1">
-        <figure><a href="yieldr.html">
-            <img class="switch-img index" data-alt-src="images/gif-yieldr.gif" src="images/yieldr-prev.jpeg"/></a>
-        </figure>
-        <span class="proj-span">Yieldr (airline SaaS company) group site</span>
-      </div>
-    </div>  
-  
-    <div class ="column">
-      <div class ="zoom shine1">
-          <figure><a href="yieldr-blog.html">
-            <img class="switch-img index" data-alt-src="images/gif-blog.gif" src="images/blog-prev.jpeg"/></a>
-          </figure>
-          <span class="proj-span">Blog built with Ghost(CMS)</span>
-        </div>
+<!-- first project section -->
+  <section id="yieldr-section">
+    <div class="row column">
+      <p class="title no-top"><a id="yieldr"></a>YIELDR</p>
     </div>
-
-    <div class="column">
-      <div class ="zoom shine1">
-        <figure><a href="yieldr-ahub.html">
-          <img class="switch-img index" data-alt-src="images/gif-ahub.gif" src="images/ahub-prev.jpeg"/></a>
-        </figure>
-        <span class="proj-span">Angular-made Airline Hub</span>
+    <div class="work-row row small-up-1 medium-up-2 large-up-3">
+      <div class ="column">
+        <div class ="zoom shine1">
+          <figure><a href="yieldr.html">
+              <img class="switch-img index" data-alt-src="images/gif-yieldr.gif" src="images/yieldr-prev.jpeg"/></a>
+          </figure>
+          <span class="proj-span">Yieldr (airline SaaS company) group site</span>
+        </div>
+      </div>  
+    
+      <div class ="column">
+        <div class ="zoom shine1">
+            <figure><a href="yieldr-blog.html">
+              <img class="switch-img index" data-alt-src="images/gif-blog.gif" src="images/blog-prev.jpeg"/></a>
+            </figure>
+            <span class="proj-span">Blog built with Ghost(CMS)</span>
+          </div>
       </div>
-    </div>                          
-  </div>
 
-  <p class="title no-top">NEW YORK CODE AND DESIGN ACADEMY (NYCDA)</p>
+      <div class="column">
+        <div class ="zoom shine1">
+          <figure><a href="yieldr-ahub.html">
+            <img class="switch-img index" data-alt-src="images/gif-ahub.gif" src="images/ahub-prev.jpeg"/></a>
+          </figure>
+          <span class="proj-span">Angular-made Airline Hub</span>
+        </div>
+      </div>                          
+    </div>
+  </section>
+
 
 <!-- second row -->
-  <div class="work-row row small-up-1 medium-up-2 large-up-3">
-    <div class ="column">
-      <div class ="zoom shine1">
-        <figure><a href="spotify.html">
-          <img class="switch-img index" data-alt-src="images/spotpreview.gif" src="images/spotprev.jpeg"/></a>
-        </figure>
-        <span class="proj-span">NYCDA final project: Playlist generator API mashup + beat maker!</span>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class ="zoom shine1">
-        <figure><a href="vaporwave.html"><img src="images/vaporpreview.gif"/></a></figure>
-        <span class="proj-span">NYCDA exercise: My first website ever!</span>
-      </div>
-    </div>                          
-
-    <div class ="column">
-      <div class ="zoom shine1">
-          <figure><a href="pirate.html">
-            <img class="switch-img index" data-alt-src="images/piratepreview.gif" src="images/pirateprev.jpeg"/></a>
-          </figure>
-          <span class="proj-span">NYCDA exercise: Basic blog app for pirates</span>
-      </div>
-    </div> 
+<section id="nycda-section">
+  <div class="row column">
+    <p class="title no-top nycdatitle">NEW YORK CODE AND DESIGN ACADEMY (NYCDA)</p>
   </div>
-
-<!-- third row  -->                           
+  <div class="work-row row small-up-1 medium-up-2 large-up-3">
+      <div class ="column">
+        <div class ="zoom shine1">
+          <figure><a href="spotify.html">
+            <img class="switch-img index" data-alt-src="images/spotpreview.gif" src="images/spotprev.jpeg"/></a>
+          </figure>
+          <span class="proj-span">NYCDA final project: Playlist generator API mashup + beat maker!</span>
+        </div>
+      </div>
+  
+      <div class="column">
+        <div class ="zoom shine1">
+          <figure><a href="vaporwave.html"><img src="images/vaporpreview.gif"/></a></figure>
+          <span class="proj-span">NYCDA exercise: My first website ever!</span>
+        </div>
+      </div>                          
+  
+      <div class ="column">
+        <div class ="zoom shine1">
+            <figure><a href="pirate.html">
+              <img class="switch-img index" data-alt-src="images/piratepreview.gif" src="images/pirateprev.jpeg"/></a>
+            </figure>
+            <span class="proj-span">NYCDA exercise: Basic blog app for pirates</span>
+        </div>
+      </div> 
+    </div>
+    <!-- third row  -->                           
   <div class="work-row row small-up-1 medium-up-2 large-up-3">
     <div class ="column">
         <div class ="zoom shine1">
@@ -156,9 +167,12 @@
         </div>
       </div>        
   </div>  
+</section>
+
+
+
 
 </div>          
-<hr>
 <br>
 <br>
 
@@ -171,30 +185,36 @@
             <a href="https://www.linkedin.com/in/yeropharaoh/" target="me linkedin"><i class="fi-social-linkedin"></i></a>
             <a href="https://github.com/yeropharaoh" target="me github"><i class="fi-social-github"></i></a>
             <a href="https://codepen.io/yeropharaoh/" target="me codepen"><i class="fab fa-codepen"></i></a>
-            <a href="https://yeropharaoh.com/" target="me music-makin website"><p class="yero">yero pharaoh</p></a>
         </div>
       </ul>
     </div>
     <div class="medium-6 columns">
-    <form action="mailto:yeroschutte@gmail.com" method="GET">
-        <label>Name
-          <input type="text" placeholder="Your Name">
-        </label>
-        <label>Email
-          <input type="text" placeholder="Your E-mail">
-        </label>
-        <label>
-          Message
-          <textarea placeholder="Let's meet!"></textarea>
-        </label>
-        <input type="submit" class="button expanded" value="Submit">
-    </form>
+      <form action="mailto:yeroschutte@gmail.com" method="GET">
+          <label>Name
+            <input type="text" placeholder="Your Name">
+          </label>
+          <label>E-mail
+            <input type="email" placeholder="Your E-mail">
+          </label>
+          <label>
+            Message
+            <textarea placeholder="Let's meet!"></textarea>
+          </label>
+          <input type="submit" class="button expanded" value="Submit">
+      </form>
     </div>
 </div>
 
-<div class="copyright">
-  <h6>&copy; Yero Schutte 2020</h6>
-</div>
+  <div class="copyright">
+    <h6>&copy; Yero Schutte <span id="curYr"></span></h6>
+  </div>
+
+<!-- add current Year to innerHTML -->
+<script>
+  let date = new Date();
+  let year = date.getFullYear();
+  document.getElementById('curYr').innerHTML = year;
+</script>
 
 </body>
 </html>
