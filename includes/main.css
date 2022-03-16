@@ -76,6 +76,7 @@ hr {
 
 .title.no-top {
   padding-top: 2em;
+  padding-bottom: 1em;
   font-size: 24px;
 }
 
@@ -159,7 +160,7 @@ label {
 
 /*TYPED*/
 .section-typed {
-  margin: 2em auto 3em auto;
+  margin: 9em auto 3em auto;
 }
 
 .type-wrap{
@@ -240,7 +241,8 @@ figure, figure img {
 /*WORK PAGE*/
 .nav-whole {
   z-index: 1;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0px;
   /* background-color: white; */
   background-color:#4CB9F6;
@@ -270,19 +272,19 @@ section {
   color: #3832E4;
 }
 
-#nycda-section {
+#nycda-section, #yeroacademy-section {
   background-color: #3832E4;
 }
 
-#nycda-section figure {
+#nycda-section figure, #yeroacademy-section figure {
   box-shadow: 0 4px 8px 0 rgb(222	228	50 / 20%), 0 6px 20px 0 rgb(222	228	50 / 19%);
 }
 
-#nycda-section span {
+#nycda-section span, #yeroacademy-section span {
   color: #DEE432;
 }
 
-.nycdatitle {
+.yellow {
   color: #DEE432;
 }
 
